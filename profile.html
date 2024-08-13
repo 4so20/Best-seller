@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwakar Gautam - Professional Profile</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #00ff00;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            animation: glitch 1s infinite;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #00ff00;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #00ff00;
+            font-size: 36px;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #00ff00;
+            font-size: 24px;
+        }
+        .section p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 30px;
+            animation: flicker 2s infinite;
+        }
+        .highlight {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        .link-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .link-container a {
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #00ff00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            color: #00ff00;
+        }
+        .link-container a:hover {
+            background-color: #00ff00;
+            color: #0d0d0d;
+        }
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+            20% {
+                transform: translate(-2px, 2px);
+            }
+            40% {
+                transform: translate(-2px, -2px);
+            }
+            60% {
+                transform: translate(2px, 2px);
+            }
+            80% {
+                transform: translate(2px, -2px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0.6;
+            }
+            22% {
+                opacity: 0.9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <a href="demo.html">Go to HOME</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="photo_6183729089572094843_x.jpg" alt="Diwakar Gautam">
+            <div>
+                <h1>Diwakar Gautam</h1>
+                <p>Age: 19 Years</p>
+                <p>Former IIT Delhi Chemical Engineering Student</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Diwakar Gautam, a 19-year-old who was previously enrolled in the Chemical Engineering program at IIT Delhi. I coded this site just for fun, embracing a hacker-themed aesthetic. While I've stepped away from formal education, I'm enthusiastic about exploring new opportunities and challenges in the tech world.</p>
+        </div>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>You can reach me via email at: <a href="mailto:4so20chutiya@gmail.com" style="color: #00ff00;">4so20chutiya@gmail.com (don't worry real wala hai)</a></p>
+        </div>
+        <div class="footer">
+            <p class="highlight">© 2024 Diwakar Gautam. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

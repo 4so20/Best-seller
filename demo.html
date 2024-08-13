@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <style>
+   /* Basic reset and body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace; /* Hacker-like font */
+    color: #e0e0e0; /* Light color for text on dark background */
+    background-color: #1e1e1e; /* Dark background for hacker theme */
+}
+/* Header Styling */
+#header1 {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Spread items across width */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Spacing around content */
+    background: #1b1b1b; /* Dark background for stealthy look */
+    color: #e0e0e0; /* Light text color for contrast */
+    border-bottom: 2px solid #333; /* Subtle border for separation */
+}
+
+/* Logo and Map Styling */
+#logo, #map {
+    width: 80px; /* Adjusted width for minimalism */
+    height: 40px; /* Adjusted height for proportion */
+    background: black; /* Slightly lighter background for subtlety */
+}
+
+/* Header Content Styling */
+.header-content {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Search Box Styling */
+#search-box {
+    padding: 5px; /* Inner spacing for comfort */
+    margin-right: 8px; /* Space between elements */
+    border: 1px solid #444; /* Border to define edges */
+    background: #333; /* Background to match header */
+    color: #e0e0e0;
+    height: 37px;
+    border-radius: 23px;
+    width: 25cm; /* Text color for readability */
+}
+
+/* Search Button Styling */
+.search-button {
+    padding: 5px 15px; /* Comfortable padding */
+    background: #1eff00; /* Button background for a sleek look */
+    border: none; /* Remove default border */
+    color: #000000; /* Text color for readability */
+    cursor: pointer; /* Pointer cursor for clickability */
+    transition: background 0.3s; 
+    height: 50px;
+    border-radius: 34px;
+
+    /* Smooth background color transition */
+}
+
+.search-button:hover {
+    background: #f00808; /* Slightly lighter background on hover */
+}
+
+/* Telegram Link Styling */
+
+
+
+/* Header styles */
+#header1 {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust alignment */
+    padding: 0 20px;
+    border-bottom: 2px solid #00ff00; /* Neon green border */
+}
+
+#logo {
+    height: 80px;
+    width: 150px;
+    background-image: url('IMG_1451.PNG');
+    background-size: cover;
+    margin-right: 10px; /* Ensure space between logo and map */
+}
+
+#map {
+    height: 60px;
+    width: 90px;
+    background-image: url('mapghggg.gif');
+    background-size: cover;
+    border-radius: 20px;
+    border: solid rgb(5, 5, 5);
+}
+
+/* Header2 styles */
+#header2 {
+    height: 200px;
+    width: 100%;
+    background-image: url('Nv2.gif');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.teendibba1, .teendibba2, .teendibba3 {
+    height: 210px;
+    width: 250px;
+    background-color: #000;
+    background-size: cover;
+    margin: 5px;
+    border: 1px solid #00ff00; /* Neon green border */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon glow effect */
+}
+
+.teendibba1 {
+    background-image: url('IMG_1468.PNG');
+}
+
+.teendibba2 {
+    background-image: url('IMG_1469.PNG');
+}
+
+.teendibba3 {
+    background-image: url('IMG_1470.PNG');
+}
+
+/* Main section styles */
+#header3 {
+    width: 100%;
+    background-image: url('bbbb.jpg');
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px; /* Limit max width for better readability */
+}
+
+.box {
+    height: 180px;
+    width: 180px;
+    background-color: #117a03; /* Red color for boxes */
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+    color: #e4e0e0;
+}
+
+.box p {
+    font-size: 0.8em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #search-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .line {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        height: 150px;
+        width: 150px;
+        font-size: 0.8em;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: #000;
+    padding: 40px 20px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff00; /* Neon green heading */
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+#t1{
+    border:solid black;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 23px;
+    text-decoration: none;
+    
+}
+#t1:hover {
+    background-color: #fa0707;
+    color: rgb(255, 255, 255);
+    border: #f00808;
+}
+#pp{  box-shadow: 0 0 10px rgb(4, 32, 4); 
+    border:12px  black  ;
+             }
+
+
+
+
+    </style>
+</head>
+<body>
+</header>
+<header id="header1">
+    <div id="logo"></div>
+    <div id="map"></div>
+    <div class="header-content">
+        <input type="text" id="search-box" placeholder="Enter Course name...">
+        <button class="search-button"><strong><b>Search</b></strong></button>
+  
+        </a>
+    </div>
+</header>
+    
+<div id="header2">
+    <div class="teendibba1"></div>
+    <div class="teendibba2"></div>
+    <div class="teendibba3"></div>
+</div>
+
+<main id="header3">
+    <div class="box-container">
+        <div class="box">
+            <img src="p1 iimg.jpg" id="pp" alt="Product 1">
+            <h3>Shahid Anwar</h3>
+            <p  >
+               Original price:₹27,000❌
+                price:₹199✅  </p>
+                <a href="check.html" id="t1">Buy now!</a>
+                
+        </div>
+        <div class="box">
+            <img src="product2.jpg" alt="Product 1">
+            <h3>Ethical Hacking</h3>
+            <p  >
+               Original price:₹10,000❌
+                price:₹199✅
+                 </p>
+                 <a href="check.html" id="t1">Buy now!</a>
+        </div>
+             <div  class="box"> 
+            <img src="product3.JPG" alt="Product 1">
+            <h3>YouTube Mastery</h3>
+            <p  >
+               Original price:₹13,000❌
+                price:₹199✅
+                 </p>
+                 <a href="check.html" id="t1">Buy now!</a>
+        </div>
+        <div  class="box"> 
+        <img src="product4.JPG" alt="Product 1">
+        <h3>YouTube pro Thumbnail</h3>
+        <p  >
+           Original price:₹12,000❌
+            price:₹199✅
+             </p>
+             <a href="check.html" id="t1">Buy now!</a>
+    </div>
+    <div  class="box"> 
+    <img src="product5.jpg" alt="Product 1">
+    <h3>Instgram Mastery</h3>
+    <p  >
+       Original price:₹17,000❌
+        price:₹199✅
+         </p>
+         <a href="check.html" id="t1">Buy now!</a>
+</div>
+<div  class="box"> 
+<img src="product6.jpg" alt="Product 1">
+<h3>Facebook Mastery</h3>
+<p  >
+   Original price:₹15,000❌
+    price:₹199✅
+     </p>
+     <a href="check.html" id="t1">Buy now!</a>
+</div>
+<div  class="box"> 
+<img src="product7.jpg" alt="Product 1">
+<h3>Earning Money Tricks</h3>
+<p  >
+   Original price:₹9,000❌
+    price:₹199✅
+     </p>
+     <a href="check.html" id="t1">Buy now!</a>
+</div>
+<div  class="box"> 
+<img src="product8.jpg" alt="Product 1">
+<h3>UpWork Mastery</h3>
+<p  >
+   Original price:₹17,000❌
+    price:₹199✅
+     </p>
+     <a href="check.html" id="t1">Buy now!</a>
+</div>
+<div  class="box"> 
+    <img src="product9.jpg" alt="Product 1">
+    <h3>Affilicate Markating</h3>
+    <p  >
+       Original price:₹36,000❌
+        price:₹199✅
+         </p>
+         <a href="check.html" id="t1">Buy now!</a>
+    </div>
+    <div  class="box"> 
+        <img src="product10.JPG" alt="Product 1">
+        <h3>Pro Video Edating </h3>
+        <p  >
+           Original price:₹27,000❌
+            price:₹199✅
+             </p>
+             <a href="check.html" id="t1">Buy now!</a>
+        </div>
+        <div  class="box"> 
+            <img src="product11.JPG" alt="Product 1">
+            <h3>Pro Bloging</h3>
+            <p  >
+               Original price:₹27,000❌
+                price:₹199✅
+                 </p>
+                 <a href="check.html" id="t1">Buy now!</a>
+            </div>
+            <div  class="box"> 
+                <img src="product12.JPG" alt="Product 1">
+                <h3>Dhruv Rathee chat gpt</h3>
+                <p  >
+                   Original price:₹27,000❌
+                    price:₹199✅
+                     </p>
+                     <a href="check.html" id="t1">Buy now!</a>
+                </div>
+                <div  class="box"> 
+                    <img src="product13.JPG" alt="Product 1">
+                    <h3>Dhruv Rathee Time</h3>
+                    <p  >
+                       Original price:₹27,000❌
+                        price:₹199✅
+                         </p>
+                         <a href="check.html" id="t1">Buy now!</a>
+                    </div>
+                    <div  class="box"> 
+                        <img src="product14.JPG" alt="Product 1">
+                        <h3>Vikash Divyakirti Hinid Shahitya</h3>
+                        <p  >
+                           Original price:₹27,000❌
+                            price:₹599✅
+                             </p>
+                             <a href="check.html" id="t1">Buy now!</a>
+                        </div>
+                        <div  class="box"> 
+                            <img src="product15.JPG" alt="Product 1">
+                            <h3>Vikash Divyakirti Ethics</h3>
+                            <p  >
+                               Original price:₹27,000❌
+                                price:₹599✅
+                                 </p>
+                                 <a href="check.html" id="t1">Buy now!</a>
+                            </div>
+                            <div  class="box"> 
+                                <img src="product16.jpg" alt="Product 1">
+                                <h3>Andrew Tate</h3>
+                                <p  >
+                                   Original price:₹27,000❌
+                                    price:₹199✅
+                                     </p>
+                                     <a href="check.html" id="t1">Buy now!</a>
+                                </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p class="footer-heading">Why Choose Us?</p>
+        <p class="footer-text">Our courses are among the best, offering comprehensive and expert-led training designed to elevate your skills to new heights.</p>
+        <p class="footer-heading">Contact & Policies</p>
+        <p class="footer-text">
+            For any inquiries, please reach out to us via Telegram at 
+            <a href="https://t.me/massageus247" target="_blank" class="footer-link">@massageus247</a>.
+            For details on our policies and terms, kindly refer to our 
+            <a href="template.html" class="footer-link">Terms of Service</a> and 
+            <a href="privasy.html" class="footer-link">Privacy Policy</a>.
+        </p>
+        <p class="footer-heading">Contact the Owner</p>
+        <p class="footer-text">
+            If you have any specific questions or need further assistance, feel free to contact the site owner directly at 
+            <a href="profile.html" class="footer-link" style="color: red; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Coder of this site</a>.
+            <div>
+                <a href="error.html" style="background-color: #000; color: red; height: 50px; width: 50px;">Access my site on <b><strong>DARK WEB</strong></b></a>
+             </div>
+        </p>
+    </div>
+</footer>
+
+   
+   
+
+
+<div id="header2" style="display: block;">
+    <div style="background-image: url(result\ \(1\).gif); height: 60px; width: 100%; display: block;"  id="pop"></div>
+    <div style="background-image: url(result\ \(2\).gif); height: 60px; width: 100%; display: block;"  id="pop"></div>
+    <div style="background-image: url(result\ \(3\).gif); height: 60px; width: 100%; display: block;"  id="pop"></div>
+
+</div>
+<!-- Background Audio -->
+<audio id="background-audio" autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Click Sound -->
+<audio id="click-sound">
+    <source src="click-sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+        // Play background music automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            var backgroundAudio = document.getElementById('background-audio');
+            backgroundAudio.play();
+        });
+
+        // Play click sound on any click event
+        document.addEventListener('click', function() {
+            var clickSound = document.getElementById('click-sound');
+            clickSound.play();
+        });
+</script>
+
+</body>
+</html>
+
+
